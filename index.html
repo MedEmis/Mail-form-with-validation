@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="style.css">
+			<title>DocumentA</title>
+		</head>
+
+		<body>
+			<div class="form ">
+				<form action="#" id="form" class="form-body">
+					<div class="form__loader loader">
+						<!--loader animation-->
+						<div class="loader__bar"></div>
+						<div class="loader__bar"></div>
+						<div class="loader__bar"></div>
+						<div class="loader__bar"></div>
+						<div class="loader__bar"></div>
+						<div class="loader__ball"></div>
+					</div>
+					<h1 class="form__title">Отправка данных на почту</h1>
+					<div class="form__item">
+						<label for="formName" class="form__label">Имя:*</label>
+						<input id="formName" type="text" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formMail" class="form__label">Почта:*</label>
+						<input id="formMail" type="text" name="mail" class="form__input _req _email">
+					</div>
+					<div class="form__item">
+						<div class="form__radio">
+							<div class="form__radio_title">Лево или право?</div>
+							<div class="options">
+								<div class="options__item">
+									<input type="radio" class="options__input" id="radio-left" name="hand" value="left"
+										checked>
+									<label for="radio-left" class="options__label"><span>Лево</span></label>
+								</div>
+								<div class="options__item">
+									<input type="radio" class="options__input" id="radio-right" name="hand"
+										value="right">
+									<label for="radio-right" class="options__label"><span>Право</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Сообщение:</div>
+						<textarea name="message" id="formMessage" class="form__input"></textarea>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Возраст:</div>
+						<select name="age" id="formSelect" class="form__select">
+							<option value="yong" selected="selected">Молодой</option>
+							<option value="adult">Зрелый</option>
+							<option value="old">Старый</option>
+						</select>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Файл:</div>
+						<div class="file">
+							<div class="file__item" data-tooltip=''>
+								<div class="file__tooltip " id="typeTooltip">Разрешены только изображения</div>
+								<div class="file__tooltip " id="sizeTooltip">Размер изображения не более 2 МБ</div>
+								<div class="file__tooltip " id="fileTooltip">Ошибка файла</div>
+								<input type="file" accept=".jpg, .png, gif" id="formImage" name="image"
+									class="file__input">
+								<div class="file__button">Выбрать</div>
+								<div id="formPreview" class="file__preview"></div>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req"
+								checked>
+							<label for="formAgreement" class="checkbox__label">Согласие на обработку персональных
+								данных</label>
+						</div>
+					</div>
+					<button type="submit" class="form__button">Отправить</button>
+				</form>
+			</div>
+			<script src="/JS.js"></script>
+		</body>
+
+		</html>
+
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="js/main.js"></script>
+</html>
